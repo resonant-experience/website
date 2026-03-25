@@ -1,0 +1,18 @@
+# Jekyll build artifacts
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+
+# Bundler/vendored gems
+vendor
+.bundle
+
+# Ruby and system
+*.gem
+.DS_Store
+
+# Logs and temporary
+*.log
+tmp/
+

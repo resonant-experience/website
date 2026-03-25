@@ -1,0 +1,33 @@
+---
+layout: default
+---
+<section class="cid-uBPMj7CzsV mbr-parallax-background" id="blog-home" style="padding-top: 120px; padding-bottom: 40px;">
+  <div class="mbr-overlay" style="opacity: 0.7; background-color: rgb(255, 255, 255);"></div>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-auto">
+        <h1 class="mbr-section-title mbr-fonts-style mb-0 display-2"><strong>Resonant Experience Blog</strong></h1>
+        <p class="mbr-text mbr-fonts-style display-7">Insights from cybersecurity, organizational psychology, and team resilience.</p>
+      </div>
+    </div>
+
+    <div class="row justify-content-center mt-4">
+      <div class="col-lg-10">
+        {% if site.posts == empty %}
+          <p class="display-7">No posts yet. Add posts in <code>_posts/</code> and rebuild.</p>
+        {% else %}
+          {% for post in site.posts %}
+            <div class="card mb-3">
+              <div class="card-body">
+                <h2 class="card-title display-5"><a class="text-dark" href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+                <p class="card-subtitle mb-2 text-muted display-7">{{ post.date | date: "%B %-d, %Y" }}</p>
+                <p class="card-text display-7">{{ post.excerpt | strip_html | truncate: 190 }}</p>
+                <a class="btn btn-primary display-7" href="{{ post.url | relative_url }}">Read more</a>
+              </div>
+            </div>
+          {% endfor %}
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
