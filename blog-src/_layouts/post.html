@@ -10,7 +10,10 @@ layout: default
           <h1 class="display-2">{{ page.title }}</h1>
           <p class="text-muted display-7">{{ page.date | date: "%B %-d, %Y" }}</p>
           <div class="mbr-text mbr-fonts-style display-7">{{ content }}</div>
-          <p class="mt-4"><a class="btn btn-secondary display-7" href="/blog/index.html">← Back to blog</a></p>
+          <p class="mt-4">
+            <div class="mbr-section-btn item-footer mt-3 main-button">
+              <a class="btn item-btn btn-primary display-7 animate__animated animate__delay-1s animate__fadeIn" href="/blog/index.html">←</a>
+            </div></p>
         </article>
       </div>
     </div>

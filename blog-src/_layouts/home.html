@@ -6,8 +6,8 @@ layout: default
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-auto">
-        <h1 class="mbr-section-title mbr-fonts-style mb-0 display-2"><strong>Resonant Experience Blog</strong></h1>
-        <p class="mbr-text mbr-fonts-style display-7">Insights from cybersecurity, organizational psychology, and team resilience.</p>
+        <h1 class="mbr-section-title mbr-fonts-style mb-0 display-2"><strong>Resonant Experience Insights</strong></h1>
+        <p class="mbr-text mbr-fonts-style display-7">Leadership on cybersecurity, organizational psychology, and team resilience.</p>
       </div>
     </div>
 
@@ -22,7 +22,9 @@ layout: default
                 <h2 class="card-title display-5"><a class="text-dark" href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
                 <p class="card-subtitle mb-2 text-muted display-7">{{ post.date | date: "%B %-d, %Y" }}</p>
                 <p class="card-text display-7">{{ post.excerpt | strip_html | truncate: 190 }}</p>
-                <a class="btn btn-primary display-7" href="{{ post.url | relative_url }}">Read more</a>
+                <div class="mbr-section-btn item-footer mt-3 main-button">
+                  <a class="btn item-btn btn-primary display-7 animate__animated animate__delay-1s animate__fadeIn" href="{{ post.url | relative_url }}">Read more</a>
+                </div>
               </div>
             </div>
           {% endfor %}
