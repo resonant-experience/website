@@ -1,6 +1,6 @@
 ---
 title: "Using AI to Accelerate Cyber Terrain Library Population"
-date: 2026-05-13 09:00:00 +0000
+date: 2026-05-12 09:00:00 +0000
 layout: post
 excerpt: "AI can help solve one of the more difficult parts of cyber security uplift: turning scattered system information into structured, usable knowledge."
 ---
