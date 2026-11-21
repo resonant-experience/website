@@ -1792,3 +1792,37 @@ a {
     text-align: center;
   }
 }
+.cid-services {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-image: url("../../../assets/images/max-mckinnon-c9ocwlka764-unsplash-2000x1330.webp");
+}
+.cid-services .mbr-section-title {
+  color: #000000;
+  text-align: center;
+}
+.cid-services .item-wrapper {
+  background: #ffffff;
+  padding: 2.25rem;
+  height: 100%;
+}
+@media (max-width: 767px) {
+  .cid-services .item-wrapper {
+    padding: 2rem 1.5rem;
+  }
+}
+.cid-services .mbr-card-title {
+  color: #000000;
+}
+.cid-services .service-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+  color: #000000;
+}
+.cid-services .service-list li {
+  margin-bottom: 1.5rem;
+}
+.cid-services .service-list li:last-child {
+  margin-bottom: 0;
+}
