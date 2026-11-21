@@ -1478,8 +1478,8 @@ a {
   text-align: center;
 }
 .cid-uBPRYMl4FI {
-  padding-top: 10rem;
-  padding-bottom: 10rem;
+  padding-top: 8rem;
+  padding-bottom: 4rem;
   background-image: url("../../../assets/images/max-mckinnon-c9ocwlka764-unsplash-2000x1330.webp");
 }
 .cid-uBPRYMl4FI .mbr-fallback-image.disabled {
@@ -1794,7 +1794,7 @@ a {
 }
 .cid-services {
   padding-top: 6rem;
-  padding-bottom: 6rem;
+  padding-bottom: 1.5rem;
   background-image: url("../../../assets/images/max-mckinnon-c9ocwlka764-unsplash-2000x1330.webp");
 }
 .cid-services .mbr-section-title {
@@ -1803,7 +1803,7 @@ a {
 }
 .cid-services .item-wrapper {
   background: #ffffff;
-  padding: 2.25rem;
+  padding: 2rem;
   height: 100%;
 }
 @media (max-width: 767px) {
@@ -1821,11 +1821,100 @@ a {
   color: #000000;
 }
 .cid-services .service-list li {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 .cid-services .service-list li:last-child {
   margin-bottom: 0;
 }
 .cid-uBT2z2ij2Y .mbr-text {
   color: #ffffff;
+}
+.cid-services .service-list li {
+  font-size: 1.05rem;
+  line-height: 1.5;
+}
+.cid-services .service-list li strong {
+  font-size: 1.2rem;
+}
+/* Scale dense sections with viewport height so each fits one screen on desktop monitors */
+@media (min-width: 992px) {
+  .cid-services,
+  .cid-uBPRYMl4FI {
+    padding-top: calc(90px + 2vh);
+    padding-bottom: 3vh;
+  }
+  .cid-services .container,
+  .cid-uBPRYMl4FI .container {
+    max-width: min(94vw, 165vh);
+  }
+  .cid-services .content-head {
+    margin-bottom: 3vh !important;
+  }
+  .cid-services .mbr-section-title,
+  .cid-uBPRYMl4FI .mbr-section-title {
+    font-size: clamp(2rem, 6vh, 5.5rem);
+  }
+  .cid-services .mbr-card-title {
+    font-size: clamp(1.3rem, 3.4vh, 3rem);
+    margin-bottom: 2vh !important;
+  }
+  .cid-services .item-wrapper,
+  .cid-uBPRYMl4FI .item-wrapper {
+    padding: clamp(1.25rem, 3.5vh, 3.5rem);
+  }
+  .cid-services .col-lg-6.mb-4 {
+    margin-bottom: 2.5vh !important;
+  }
+  .cid-services .service-list li {
+    font-size: clamp(0.85rem, 1.9vh, 1.7rem);
+    margin-bottom: 1.6vh;
+  }
+  .cid-services .service-list li strong {
+    font-size: clamp(0.95rem, 2.2vh, 1.95rem);
+  }
+  .cid-uBPRYMl4FI .card-title {
+    font-size: clamp(1.2rem, 3.4vh, 2.9rem);
+  }
+  .cid-uBPRYMl4FI .card-text {
+    font-size: clamp(0.9rem, 2.3vh, 1.95rem);
+  }
+  .cid-uBPRYMl4FI .item-mb {
+    margin-bottom: 3vh;
+  }
+}
+.cid-uBOi7aotzR img {
+  max-height: 40vh;
+  object-fit: contain;
+}
+/* Consistent scroll-down button position: bottom centre of every section */
+.has-scroll-down {
+  position: relative;
+  padding-bottom: calc(4vh + 4.5rem) !important;
+}
+.has-scroll-down .scroll-down {
+  position: absolute;
+  left: 50%;
+  bottom: 3vh;
+  transform: translateX(-50%);
+  z-index: 2;
+  margin: 0;
+}
+.has-scroll-down .scroll-down .btn {
+  margin: 0;
+}
+@media (min-width: 992px) {
+  .cid-uBPDguYzca .content-wrap {
+    padding-top: calc(90px + 2vh);
+    padding-bottom: 2vh;
+  }
+  .cid-uBPDguYzca .mbr-section-title {
+    font-size: clamp(2rem, 6vh, 5.5rem);
+  }
+  .cid-uBPDguYzca .mbr-text {
+    font-size: clamp(1.1rem, 3.2vh, 2.7rem);
+    line-height: 1.45;
+  }
+}
+.cid-uBPRYMl4FI .mbr-section-title {
+  line-height: 1.1;
 }
